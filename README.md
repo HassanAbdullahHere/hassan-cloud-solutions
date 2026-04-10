@@ -1,6 +1,6 @@
 # Hassan's Cloud Solutions Journey
 
-> AI Solutions Engineer in training — documenting hands-on cloud infrastructure projects with a focus on real-world decisions, architecture thinking, and AI infrastructure.
+> AI Solutions Engineer — documenting hands-on cloud infrastructure projects with a focus on real-world decisions, architecture thinking, and AI infrastructure.
 
 ---
 
@@ -8,7 +8,7 @@
 
 Every project in this repo includes:
 - What I built and why
-- Key AWS/cloud concepts applied
+- Key AWS/cloud and devOps concepts applied
 - Decisions made and lessons learned
 - Connection to AI infrastructure use cases
 
