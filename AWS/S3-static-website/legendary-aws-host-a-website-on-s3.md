@@ -12,131 +12,81 @@
 
 ---
 
-## Introducing Today's Project!
+## Project Overview
 
-### Project overview
+In this project, I hosted a static website on AWS S3 using HTML and image files. I configured the bucket for public access using static website hosting, ACLs, and bucket policies.
 
-In this project, I will be using AWS S3 Bucket to host a website using files and pictures.
-
-### Tools and concepts
-
-Services I used were S3 Bucket, ACLs, Bucket policies to live my website publicly and manage access to it.
-
-### Time, challenges, and wins
-
-This project took me approximately 25 minutes.
+**Services used:** Amazon S3, ACLs, Bucket Policies  
+**Duration:** ~25 minutes
 
 ---
 
-## How I Set Up an S3 Bucket
+## Step 1 — Create an S3 Bucket
 
-### What I did in this step
+I logged into the AWS Console and navigated to S3 to create a new bucket.
 
-In this step, I will log into my AWS console and search for S3.
+- **Region:** Mumbai (`ap-south-1`) — closest to my location
+- **Time to create:** ~2 minutes
 
-### How long it took to create the bucket
-
-Creating an S3 bucket took me around 2 minutes
-
-### Region selection
-
-The Region I picked for my S3 bucket was Mumbai(ap-south-1) because its closest to me.
-
-### Understanding bucket name uniqueness
-
-An S3 bucket name is globally unique. After you create a bucket, no other AWS account in the entire world can use your bucket's name (unless you delete the bucket).
+**Key concept:** S3 bucket names are globally unique. Once a bucket is created, no other AWS account in the world can use that name until the bucket is deleted.
 
 ![Image](http://learn.nextwork.org/loving_gold_zesty_sage/uploads/aws-host-a-website-on-s3_ba6d42ad)
 
 ---
 
-## Upload Website Files to S3
+## Step 2 — Upload Website Files
 
-### What I did in this step
+I uploaded the following files to the S3 bucket:
 
-In this step, I will uploading the HTML file that sets upthe website and images for my website.
+- **`index.html`** — the entry point and structure of the website
+- **Image assets** — displayed on the webpage
 
-### Files I uploaded
-
-I uploaded two files to my S3 bucket - they were index.html the entry point and the images for my website.
-
-### How the files work together
-
-Both files are necessary for this project as index.html is just the skeleton and entry point, and images will be shown on this page.
+Both files are required: `index.html` provides the skeleton, and the images populate the page content.
 
 ![Image](http://learn.nextwork.org/loving_gold_zesty_sage/uploads/aws-host-a-website-on-s3_a265af88)
 
 ---
 
-## Static Website Hosting on S3
+## Step 3 — Enable Static Website Hosting
 
-### What I did in this step
+To make the bucket serve a website, I navigated to:  
+**Bucket → Properties → Static Website Hosting → Edit → Enable**
 
-In this step, I will configure my S3 bucket for static website hosting and visit public website link.
+**What website hosting does:** It exposes your S3 bucket files via a public URL, making the site accessible on the internet.
 
-### Understanding website hosting
-
-Website hosting is what makes your website public on the internet.
-
-### How I enabled website hosting
-
-To enable website hosting with my S3 bucket, I selected the targeted bucket -> properties -> all the way down to static web hosting -> Edit -> Enable it
-
-### Access Control Lists (ACLs)
-
-An ACL is a set of rules that decides who can get access to a resource.
-I enabled it.
+I also enabled **ACLs (Access Control Lists)** — a set of rules that control who can access individual objects in the bucket.
 
 ![Image](http://learn.nextwork.org/loving_gold_zesty_sage/uploads/aws-host-a-website-on-s3_c22c54c0)
 
 ---
 
-## Bucket Endpoints
+## Step 4 — Test the Bucket Endpoint
 
-### Understanding bucket endpoint URLs
+After enabling static website hosting, S3 generates a **bucket website endpoint URL** — a public link to access the hosted site.
 
-A bucket website endpoint is just like a regular website URL. It lets people visit your S3 bucket's files as a website.
-
-### What I saw when I tested the endpoint
-
-When I first visited the bucket endpoint URL, I saw an error 403. The error message is telling me that your static website is being hosted by S3, but the actual HTML/image files I have uploaded are still private.
+When I first visited the endpoint, I got a **403 Forbidden** error. This meant the bucket was configured for hosting, but the uploaded files were still private by default.
 
 ![Image](http://learn.nextwork.org/loving_gold_zesty_sage/uploads/aws-host-a-website-on-s3_22ce4daf)
 
 ---
 
-## Success!
+## Step 5 — Make Files Public
 
-### What I did in this step
+To resolve the 403 error, I selected `index.html` and the assets folder, then chose:  
+**Actions → Make Public using ACL**
 
-Files uploading done, now I will make website files in S3 publicly accessbile and then verify if its live.
-
-### How I resolved the 403 error
-
-To resolve this 403 Forbidden error, I selected the index.html and assests foler -> Actions -> Make Public using ACLs
+After applying this, the website loaded successfully at the bucket endpoint URL.
 
 ![Image](http://learn.nextwork.org/loving_gold_zesty_sage/uploads/aws-host-a-website-on-s3_5d4474f9)
 
 ---
 
-## Bucket Policies
+## Extension — Bucket Policies
 
-### What I did in this extension
+As an extension, I configured a **bucket policy** to manage access at a more granular level.
 
-In this project extension I'm about to set up bucket policies so I can manage control access to index.html file of my website.
+**Bucket policies vs. ACLs:** ACLs control read/write access per object. Bucket policies go further — they can control who can delete objects, upload new files, change permissions, and much more, all from a single JSON policy document.
 
-### Understanding bucket policies
-
-An alternative to ACLs are bucket policies.
-Using bucket policies means you can now control more than just who can see/access an object. With bucket policies, you can manage:
-Who can delete the object.
-Who can change the object.
-Who can upload new objects to your bucket.
-And much, much more!
+I tested the policy by attempting to delete `index.html`, which was blocked as expected — confirming the policy was enforced correctly.
 
 ![Image](http://learn.nextwork.org/loving_gold_zesty_sage/uploads/aws-host-a-website-on-s3_sm2sm2sm)
-
-### What my bucket policy does
-
-I tested the bucket policy by trying to delete index.html. 
-
