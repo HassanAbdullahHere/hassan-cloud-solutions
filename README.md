@@ -38,6 +38,7 @@ Every project in this repo includes:
 | 4 | Launching VPC Resources | VPC, EC2, NAT Gateway | ~50 min | [View](AWS/VPC/aws-vpc-resources.md) |
 | 5 | Testing VPC Connectivity | VPC, EC2, Security Groups | ~50 min | [View](AWS/VPC/aws-vpc-servers-connectivity.md) |
 | 6 | VPC Peering | VPC, EC2, Peering Connections, Elastic IP | ~60 min | [View](AWS/VPC/aws-vpc-peering.md) |
+| 7 | VPC Monitoring with Flow Logs | VPC, Flow Logs, CloudWatch, IAM | ~60 min | [View](AWS/VPC/aws-flowlogs-cloudwatch.md) |
 
 ---
 
