@@ -20,23 +20,23 @@ Every project in this repo includes:
 
 | # | Project | Services | Duration | Doc |
 |---|---------|----------|----------|-----|
-| 1 | Cloud Security with AWS IAM | IAM, Users, Groups, Policies | — | [View](AWS/CLoud%20Security%20and%20IAM/aws-security-iam.md) |
+| 1 | Cloud Security with AWS IAM | IAM, Users, Groups, Policies | ~50 min | [View](AWS/CLoud%20Security%20and%20IAM/aws-security-iam.md) |
 
 ### AWS — Storage
 
 | # | Project | Services | Duration | Doc |
 |---|---------|----------|----------|-----|
-| 1 | S3 Static Website Hosting | S3, ACLs, Bucket Policies | ~25 min | [View](AWS/S3-static-website/legendary-aws-host-a-website-on-s3.md) |
+| 1 | S3 Static Website Hosting | S3, ACLs, Bucket Policies | ~25 min | [View](AWS/S3-static-website/aws-host-a-website-on-s3.md) |
 
 ### AWS — Networking (VPC)
 
 | # | Project | Services | Duration | Doc |
 |---|---------|----------|----------|-----|
-| 1 | Build a Virtual Private Cloud | VPC, Subnets, IGW, Route Tables | — | [View](AWS/VPC/aws-networks-vpc.md) |
-| 2 | VPC Traffic Flow and Security | VPC, Security Groups, NACLs | — | [View](AWS/VPC/aws-vpc-security-layers.md) |
-| 3 | Creating a Private Subnet | VPC, Private Subnets, NACLs, Route Tables | — | [View](AWS/VPC/aws-private-subnet-NACL-RT.md) |
-| 4 | Launching VPC Resources | VPC, EC2, NAT Gateway | — | [View](AWS/VPC/aws-vpc-resources.md) |
-| 5 | Testing VPC Connectivity | VPC, EC2, Security Groups | — | [View](AWS/VPC/aws-vpc-servers-connectivity.md) |
+| 1 | Build a Virtual Private Cloud | VPC, Subnets, IGW, Route Tables | ~45 min | [View](AWS/VPC/aws-networks-vpc.md) |
+| 2 | VPC Traffic Flow and Security | VPC, Security Groups, NACLs | ~50 min | [View](AWS/VPC/aws-vpc-security-layers.md) |
+| 3 | Creating a Private Subnet | VPC, Private Subnets, NACLs, Route Tables | ~30 min | [View](AWS/VPC/aws-private-subnet-NACL-RT.md) |
+| 4 | Launching VPC Resources | VPC, EC2, NAT Gateway | ~50 min | [View](AWS/VPC/aws-vpc-resources.md) |
+| 5 | Testing VPC Connectivity | VPC, EC2, Security Groups | ~50 min | [View](AWS/VPC/aws-vpc-servers-connectivity.md) |
 | 6 | VPC Peering | VPC, EC2, Peering Connections, Elastic IP | ~60 min | [View](AWS/VPC/aws-vpc-peering.md) |
 
 ---
