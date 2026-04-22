@@ -40,6 +40,7 @@ Every project in this repo includes:
 | 6 | VPC Peering | VPC, EC2, Peering Connections, Elastic IP | ~60 min | [View](AWS/VPC/aws-vpc-peering.md) |
 | 7 | VPC Monitoring with Flow Logs | VPC, Flow Logs, CloudWatch, IAM | ~60 min | [View](AWS/VPC/aws-flowlogs-cloudwatch.md) |
 | 8 | Access S3 from a VPC | VPC, EC2, S3, AWS CLI, IAM | ~45 min | [View](AWS/VPC/aws-access-s3-from-vpc.md) |
+| 9 | VPC Endpoints | VPC, EC2, S3, VPC Endpoints, IAM | ~60 min | [View](AWS/VPC/aws-vpc-endpoints.md) |
 
 ---
 
