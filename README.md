@@ -22,6 +22,13 @@ Every project in this repo includes:
 |---|---------|----------|----------|-----|
 | 1 | Cloud Security with AWS IAM | IAM, Users, Groups, Policies | ~50 min | [View](AWS/CLoud%20Security%20and%20IAM/aws-security-iam.md) |
 
+### AWS — Database
+
+| # | Project | Services | Duration | Doc |
+|---|---------|----------|----------|-----|
+| 1 | Load Data into DynamoDB | DynamoDB, AWS CLI, CloudShell | ~60 min | [View](AWS/Database/aws-dynamodb-create-load.md) |
+| 2 | Query Data with DynamoDB | DynamoDB, Queries, Transactions, AWS CLI | ~60 min | [View](AWS/Database/aws-dynamodb-queries-transactions.md) |
+
 ### AWS — Storage
 
 | # | Project | Services | Duration | Doc |
