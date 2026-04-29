@@ -22,11 +22,12 @@ Every project in this repo includes:
 |---|---------|----------|----------|-----|
 | 1 | Cloud Security with AWS IAM | IAM, Users, Groups, Policies | ~50 min | [View](AWS/CLoud%20Security%20and%20IAM/aws-security-iam.md) |
 
-### AWS — Cloud Security (Encryption & KMS)
+### AWS — Cloud Security (Encryption & Secrets)
 
 | # | Project | Services | Duration | Doc |
 |---|---------|----------|----------|-----|
 | 1 | Encrypt Data with AWS KMS | KMS, DynamoDB, IAM | ~50 min | [View](AWS/Cloud%20Security/aws-security-kms.md) |
+| 2 | Secure Secrets with Secrets Manager | Secrets Manager, IAM, S3, GitHub | ~70 min | [View](AWS/Cloud%20Security/aws-security-secretsmanager.md) |
 
 ### AWS — Database
 
