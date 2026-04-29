@@ -22,6 +22,12 @@ Every project in this repo includes:
 |---|---------|----------|----------|-----|
 | 1 | Cloud Security with AWS IAM | IAM, Users, Groups, Policies | ~50 min | [View](AWS/CLoud%20Security%20and%20IAM/aws-security-iam.md) |
 
+### AWS — Cloud Security (Encryption & KMS)
+
+| # | Project | Services | Duration | Doc |
+|---|---------|----------|----------|-----|
+| 1 | Encrypt Data with AWS KMS | KMS, DynamoDB, IAM | ~50 min | [View](AWS/Cloud%20Security/aws-security-kms.md) |
+
 ### AWS — Database
 
 | # | Project | Services | Duration | Doc |
@@ -53,7 +59,7 @@ Every project in this repo includes:
 
 ## Focus Areas
 
-- **AWS Cloud & Security** — IAM, S3, EC2, VPC, and more
+- **AWS Cloud & Security** — IAM, KMS, S3, EC2, VPC, and more
 - **DevOps & CI/CD** — Pipelines, automation, and infrastructure as code
 - **AI Infrastructure** — Building the cloud backbone for AI workloads
 
