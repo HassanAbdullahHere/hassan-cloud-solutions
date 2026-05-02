@@ -33,7 +33,8 @@ Every project in this repo includes:
 
 | # | Project | Services | Duration | Doc |
 |---|---------|----------|----------|-----|
-| 1 | APIs with Lambda + API Gateway | Lambda, API Gateway, DynamoDB | ~60 min | [View](AWS/Compute%20and%20API/aws-lambda-api-gateway.md) |
+| 1 | Fetch Data with AWS Lambda | Lambda, DynamoDB, IAM | ~50 min | [View](AWS/Compute%20and%20API/aws-lambda-dynamodb.md) |
+| 2 | APIs with Lambda + API Gateway | Lambda, API Gateway, DynamoDB | ~60 min | [View](AWS/Compute%20and%20API/aws-lambda-api-gateway.md) |
 
 ### AWS — Database
 
